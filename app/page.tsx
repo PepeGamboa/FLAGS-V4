@@ -29,6 +29,7 @@ interface Country {
       summary: string
       image: string
       themes: string[]
+      extract: string
     }
   }
 }
@@ -57,6 +58,8 @@ const countries: Country[] = [
           "Don Quijote de la Mancha es considerada la primera novela moderna y una de las obras más importantes de la literatura universal. Narra las aventuras de Alonso Quixano, un hidalgo que enloquece leyendo libros de caballerías y decide convertirse en caballero andante bajo el nombre de Don Quijote. Acompañado por su fiel escudero Sancho Panza, emprende aventuras para defender a los desvalidos y luchar contra las injusticias. La obra es una sátira de las novelas de caballerías, pero también una profunda reflexión sobre la realidad y la fantasía, los ideales y la vida práctica. A través del contraste entre el idealista Don Quijote y el pragmático Sancho Panza, Cervantes explora temas universales como la locura y la cordura, la justicia, el amor y la muerte. La novela presenta episodios memorables como la lucha contra los molinos de viento, que Don Quijote confunde con gigantes, simbolizando la lucha eterna entre los ideales y la realidad.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Idealismo vs Realismo", "Locura y Cordura", "Justicia", "Amistad", "Sátira Social"],
+        extract:
+          '"En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lentejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. Finalmente, tanto leyó en aquellos libros, que se le secó el celebro de manera que vino a perder el juicio. Llenósele la fantasía de todo aquello que leía en los libros, así de encantamentos como de pendencias, batallas, desafíos, heridas, requiebros, amores, tormentas y disparates imposibles." (Capítulo 1, página 25)',
       },
     },
   },
@@ -83,6 +86,7 @@ const countries: Country[] = [
           "Fausto, de Goethe, narra la historia de un sabio insatisfecho que, a través de un pacto con el diablo Mefistófeles, busca conocimiento y placeres terrenales, vendiendo su alma a cambio de juventud y experiencias ilimitadas. La obra, dividida en dos partes, explora la búsqueda de sentido en la vida, la lucha entre el bien y el mal, y la naturaleza del alma humana. El doctor Fausto, un erudito consumido por su sed de conocimiento, se siente frustrado por los límites de la ciencia y la filosofía. A través de sus aventuras, Fausto experimenta el amor con Margarita (Gretchen), una joven inocente que se convierte en víctima de su pasión. En la segunda parte, Fausto continúa su búsqueda de conocimiento y poder, participando en eventos históricos y realizando grandes obras para la humanidad. La obra culmina mostrando la posibilidad de redención incluso para aquellos que han caído profundamente. Finalmente, a pesar de sus pecados y errores, Fausto es redimido y salvado por la gracia divina.",
         image: "/fausto-illustration.png",
         themes: ["Pacto Diabólico", "Búsqueda del Conocimiento", "Amor y Tragedia", "Redención", "Naturaleza Humana"],
+        extract: '"¡Detente, instante! ¡Eres tan bello!" (Acto V, Escena V)',
       },
     },
   },
@@ -109,6 +113,8 @@ const countries: Country[] = [
           "Hamlet es la tragedia más famosa de Shakespeare, que narra la historia del príncipe Hamlet de Dinamarca, quien busca vengar la muerte de su padre tras ser visitado por su fantasma. La obra explora temas profundos como la venganza, la locura, la muerte, la traición y la corrupción moral. Hamlet finge estar loco mientras planea su venganza contra su tío Claudio, quien ha asesinado a su padre y se ha casado con su madre Gertrudis. La obra incluye algunos de los monólogos más famosos de la literatura, incluyendo 'Ser o no ser', donde Hamlet reflexiona sobre la vida y la muerte. La complejidad psicológica del protagonista, sus dudas existenciales y su lucha interna entre la acción y la contemplación han convertido a Hamlet en uno de los personajes más estudiados de la literatura. La tragedia culmina en una serie de muertes que incluyen a Hamlet, Claudio, Gertrudis y Laertes, dejando solo a Horacio para contar la historia.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Venganza", "Locura", "Muerte", "Traición", "Dilema Moral"],
+        extract:
+          '"Ser o no ser, esa es la cuestión. ¿Cuál es más noble en la mente, sufrir los golpes y dardos de la ultrajante fortuna, o tomar armas contra un mar de calamidades, y, al oponerse a ellas, encontrar el fin?" (Acto III, Escena I)',
       },
     },
   },
@@ -136,6 +142,7 @@ const countries: Country[] = [
           "Los Miserables es una monumental novela que retrata la Francia del siglo XIX a través de la historia de Jean Valjean, un ex-convicto que busca la redención. La obra sigue las vidas entrelazadas de varios personajes, incluyendo a Fantine, una madre soltera; Cosette, su hija; Marius, un joven revolucionario; y Javert, el implacable inspector de policía. Hugo utiliza estas historias personales para explorar temas de justicia social, pobreza, revolución y redención. La novela culmina durante los levantamientos de París de 1832, donde los personajes enfrentan sus destinos. Es una obra que combina el drama personal con la crítica social, mostrando tanto la miseria humana como la capacidad de transformación y esperanza. Hugo presenta un panorama épico de la sociedad francesa, desde los salones aristocráticos hasta las alcantarillas de París, creando un fresco social de extraordinaria amplitud.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Justicia Social", "Redención", "Revolución", "Pobreza", "Amor y Sacrificio"],
+        extract: '"¿Amas? ¡Oh, sé amado! No pido más." (Volumen V, Libro I, Capítulo XIX)',
       },
     },
   },
@@ -162,6 +169,8 @@ const countries: Country[] = [
           "Ficciones es una colección de cuentos que revolucionó la literatura del siglo XX con su exploración de temas como el infinito, los laberintos, los espejos y la naturaleza de la realidad. Borges crea mundos fantásticos que desafían la lógica convencional: bibliotecas infinitas, laberintos temporales, enciclopedias de mundos imaginarios y personajes que existen en múltiples realidades. Cuentos como 'La Biblioteca de Babel', 'El jardín de senderos que se bifurcan' y 'Pierre Menard, autor del Quijote' han influenciado profundamente la literatura contemporánea. La obra combina erudición, filosofía y fantasía para crear una literatura intelectual única que explora los límites del conocimiento humano y la naturaleza de la ficción misma. Borges utiliza la metaficción para cuestionar las fronteras entre realidad y literatura, creando textos que son tanto cuentos como ensayos filosóficos.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Infinito", "Laberintos", "Realidad y Ficción", "Tiempo", "Conocimiento"],
+        extract:
+          '"No hay ejercicio intelectual que no sea finalmente inútil. Una doctrina filosófica es al principio una descripción verosímil del universo; giran los años y es un mero capítulo —cuando no un párrafo o un nombre— de la historia de la filosofía." (Tlön, Uqbar, Orbis Tertius)',
       },
     },
   },
@@ -188,6 +197,7 @@ const countries: Country[] = [
           "Guerra y Paz es una monumental novela épica que retrata la sociedad rusa durante las guerras napoleónicas. A través de las vidas de familias aristocráticas como los Rostov, los Bolkonsky y los Bezukhov, Tolstói explora temas universales como el amor, la guerra, la muerte, la fe y el destino. La obra combina magistralmente la historia personal con los grandes eventos históricos, mostrando cómo las vidas individuales se entrelazan con el curso de la historia. Pierre Bezukhov, Natasha Rostova y el príncipe Andrei Bolkonsky son personajes inolvidables que encarnan diferentes aspectos de la experiencia humana. La novela es tanto un retrato íntimo de la vida familiar como una meditación filosófica sobre la naturaleza de la historia y el libre albedrío. Tolstói presenta la guerra no como gloria heroica, sino como caos y sufrimiento humano, mientras celebra la capacidad de resistencia y renovación del espíritu humano.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Guerra y Paz", "Destino", "Amor", "Historia", "Filosofía de la vida"],
+        extract: '"Todos piensan en cambiar el mundo, pero nadie piensa en cambiarse a sí mismo." (Epílogo, Parte II)',
       },
     },
   },
@@ -214,6 +224,7 @@ const countries: Country[] = [
           "El Mar de la Fertilidad es la obra cumbre de Mishima, una tetralogía que explora temas de reencarnación, belleza, decadencia y la tensión entre tradición y modernidad en el Japón del siglo XX. La saga sigue las supuestas reencarnaciones de un joven a través de cuatro novelas: 'Nieve de primavera', 'Caballos desbocados', 'El templo del alba' y 'La corrupción de un ángel'. Cada volumen está ambientado en una época diferente, desde la era Taisho hasta la posguerra, mostrando la transformación de Japón. Mishima combina elementos del budismo, el shintoísmo y la filosofía occidental para crear una meditación profunda sobre la naturaleza del tiempo, la identidad y la muerte. La obra refleja la obsesión del autor con la belleza efímera y su crítica a la occidentalización de Japón, culminando en una reflexión sobre el vacío existencial de la modernidad.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Reencarnación", "Tradición vs Modernidad", "Belleza", "Muerte", "Identidad japonesa"],
+        extract: '"La vida humana es como una vela en el viento." (Nieve de Primavera)',
       },
     },
   },
@@ -240,6 +251,7 @@ const countries: Country[] = [
           "Cien años de soledad es la obra maestra del realismo mágico que narra la historia de la familia Buendía a lo largo de siete generaciones en el pueblo ficticio de Macondo. García Márquez teje una narrativa donde lo fantástico y lo real se entrelazan naturalmente, creando un universo donde llueve flores, los personajes ascienden al cielo y los muertos conviven con los vivos. La novela es una alegoría de la historia latinoamericana, explorando temas como la soledad, el destino cíclico, el poder, la violencia y el amor. Cada generación de los Buendía repite patrones familiares, sugiriendo que la historia se repite inexorablemente. La obra combina elementos míticos con crítica social, presentando una visión poética y trágica de América Latina. El estilo narrativo de García Márquez, que mezcla lo cotidiano con lo extraordinario, revolucionó la literatura mundial y estableció el realismo mágico como un género literario reconocido.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Realismo Mágico", "Soledad", "Destino Cíclico", "Historia Latinoamericana", "Familia"],
+        extract: '"El tiempo no pasaba, como si el mundo se hubiera detenido." (Capítulo 1)',
       },
     },
   },
@@ -266,6 +278,8 @@ const countries: Country[] = [
           "La Metamorfosis es una de las obras más influyentes de la literatura moderna, que narra la transformación de Gregor Samsa en un insecto gigantesco. Esta transformación física sirve como metáfora de la alienación del individuo en la sociedad moderna. Kafka explora temas como la incomunicación familiar, la deshumanización del trabajo, la culpa y la responsabilidad. La obra presenta un mundo absurdo donde lo imposible se acepta como normal, anticipando el existencialismo y el teatro del absurdo. A través de la experiencia de Gregor, Kafka examina cómo la sociedad trata a aquellos que son diferentes o improductivos. La familia de Gregor, inicialmente dependiente de él económicamente, gradualmente lo rechaza y lo trata como una carga. La novela es una crítica mordaz de la sociedad burguesa y una exploración profunda de la condición humana en la era industrial.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Alienación", "Metamorfosis", "Familia", "Absurdo", "Condición humana"],
+        extract:
+          '"Cuando Gregorio Samsa se despertó una mañana después de un sueño intranquilo, se encontró sobre su cama convertido en un monstruoso insecto." (Capítulo 1)',
       },
     },
   },
@@ -292,6 +306,8 @@ const countries: Country[] = [
           "Esta colección poética, escrita cuando Neruda tenía apenas 19 años, se convirtió en una de las obras más leídas de la poesía en español. Los poemas exploran el amor juvenil con una intensidad y sensualidad que revolucionó la poesía amorosa en lengua española. Neruda combina elementos del modernismo con un lenguaje más directo y emocional, creando versos que van desde la exaltación del amor hasta la melancolía de la pérdida. La obra refleja la influencia del paisaje chileno, especialmente del sur del país, donde Neruda pasó su juventud. Los poemas alternan entre la celebración del cuerpo femenino y la naturaleza, y la exploración de la soledad y el desamor. La 'canción desesperada' que cierra el libro es considerada una de las elegías amorosas más hermosas de la literatura hispanoamericana. La obra estableció a Neruda como una voz poética única y marcó el inicio de una carrera que lo llevaría al Premio Nobel de Literatura.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Amor juvenil", "Naturaleza", "Sensualidad", "Melancolía", "Paisaje chileno"],
+        extract:
+          '"Cuerpo de mujer, blancas colinas, muslos blancos, te pareces al mundo en tu actitud de entrega. Mi cuerpo de labriego salvaje te socava y hace saltar el hijo del fondo de la tierra." (Poema 1)',
       },
     },
   },
@@ -318,6 +334,8 @@ const countries: Country[] = [
           "El retrato de Dorian Gray es la única novela de Oscar Wilde y una obra maestra del decadentismo victoriano. La historia narra cómo Dorian Gray, un joven de extraordinaria belleza, hace un pacto para que su retrato envejezca en su lugar mientras él permanece eternamente joven. Influenciado por el hedonista Lord Henry Wotton, Dorian se sumerge en una vida de placeres y excesos, mientras su alma se corrompe y su retrato refleja la degradación moral que su rostro no muestra. Wilde utiliza esta premisa fantástica para explorar temas como la vanidad, la corrupción moral, el arte por el arte, y la hipocresía de la sociedad victoriana. La novela es tanto una crítica social como una reflexión sobre la naturaleza del arte y la belleza. El personaje de Dorian encarna los peligros del narcisismo y la búsqueda obsesiva de la juventud eterna, mientras que el retrato funciona como símbolo de la conciencia moral.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Vanidad", "Corrupción moral", "Arte y belleza", "Decadentismo", "Hipocresía social"],
+        extract:
+          '"La única manera de librarse de una tentación es ceder ante ella. Resístela, y tu alma enfermará de anhelo por las cosas que se ha prohibido a sí misma." (Capítulo 2)',
       },
     },
   },
@@ -344,6 +362,8 @@ const countries: Country[] = [
           "La ciudad y los perros es la primera novela de Vargas Llosa y una de las obras fundacionales del boom latinoamericano. Ambientada en el Colegio Militar Leoncio Prado de Lima, la novela retrata la violencia, la corrupción y los códigos de honor en una institución que funciona como microcosmos de la sociedad peruana. A través de técnicas narrativas innovadoras como el monólogo interior y los saltos temporales, Vargas Llosa presenta la historia de un grupo de cadetes y cómo un robo y un asesinato revelan las tensiones sociales, raciales y de clase que dividen al país. Los personajes principales - el Jaguar, Alberto, Ricardo Arana y el Boa - representan diferentes estratos sociales y formas de enfrentar la adversidad. La novela es una crítica feroz del militarismo y del machismo, así como una exploración de cómo las instituciones pueden corromper a los individuos. El estilo narrativo complejo y la estructura fragmentada de la obra influyeron profundamente en la narrativa latinoamericana posterior.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Violencia institucional", "Clases sociales", "Machismo", "Corrupción", "Adolescencia"],
+        extract:
+          '"¿Por qué las cosas serían distintas si uno se llamara Jaguar o Boa? ¿Por qué la vida sería distinta en otro sitio, con otra gente?" (Capítulo 8)',
       },
     },
   },
@@ -370,6 +390,8 @@ const countries: Country[] = [
           "Gitanjali (Ofrenda lírica) es una colección de poemas espirituales que le valió a Tagore el Premio Nobel de Literatura en 1913, convirtiéndolo en el primer no europeo en recibir este honor. Los poemas, originalmente escritos en bengalí y luego traducidos al inglés por el propio autor, expresan una profunda devoción espiritual y una búsqueda mística de lo divino. Tagore combina elementos de la tradición hindú con una sensibilidad moderna, creando versos que trascienden las barreras culturales y religiosas. Los poemas abordan temas como la relación entre el alma individual y el cosmos, la naturaleza de Dios, la muerte, el amor y la búsqueda de la verdad. El estilo de Tagore es simple pero profundo, utilizando imágenes de la naturaleza y la vida cotidiana para expresar verdades espirituales universales. La obra refleja la filosofía del autor sobre la unidad de todas las religiones y su visión de un mundo sin fronteras culturales o nacionales.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Espiritualidad", "Misticismo", "Unidad divina", "Naturaleza", "Universalismo"],
+        extract:
+          '"Donde la mente está sin miedo y la cabeza se mantiene alta; donde el conocimiento es libre; donde el mundo no ha sido roto en fragmentos por estrechas paredes domésticas..." (Poema 35)',
       },
     },
   },
@@ -396,6 +418,7 @@ const countries: Country[] = [
           "Casa de muñecas es una obra revolucionaria que desafió las convenciones sociales de la época victoriana y se convirtió en un manifiesto feminista avant la lettre. La obra narra la historia de Nora Helmer, una mujer que aparentemente vive una vida perfecta como esposa y madre, pero que gradualmente descubre que ha sido tratada como una muñeca tanto por su padre como por su esposo Torvald. Cuando un secreto del pasado amenaza con destruir su matrimonio, Nora debe enfrentar la realidad de su situación y tomar una decisión que escandalizó a las audiencias de la época: abandonar a su familia para encontrar su propia identidad. Ibsen utiliza el realismo psicológico para explorar temas como la emancipación femenina, la hipocresía de la moral burguesa, el matrimonio como institución opresiva y la búsqueda de la autenticidad personal. La obra termina con el famoso portazo de Nora, un sonido que simbolizó el despertar de la conciencia femenina y que resonó en teatros de todo el mundo.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Emancipación femenina", "Matrimonio", "Identidad", "Hipocresía social", "Autenticidad"],
+        extract: '"Debo intentar educarme a mí misma. Debo decidir por mí misma qué es lo correcto." (Acto III)',
       },
     },
   },
@@ -422,6 +445,7 @@ const countries: Country[] = [
           "El maravilloso viaje de Nils Holgersson es una obra única que combina la literatura infantil con la geografía, la historia y el folclore sueco. La historia narra las aventuras de Nils, un niño travieso que es transformado en un duende por un gnomo como castigo por su mal comportamiento. Reducido a un tamaño diminuto, Nils viaja por toda Suecia montado en el ganso doméstico Morten, quien se ha unido a una bandada de gansos salvajes. Durante su viaje, Nils aprende sobre la geografía, la historia, las tradiciones y la naturaleza de su país, mientras gradualmente desarrolla empatía, responsabilidad y respeto por los demás seres vivos. Lagerlöf, quien fue la primera mujer en ganar el Premio Nobel de Literatura, creó esta obra como un libro de texto para enseñar geografía sueca a los niños, pero logró mucho más: una obra maestra que combina educación con entretenimiento, realismo con fantasía, y que transmite valores universales sobre el crecimiento personal y el respeto por la naturaleza.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Crecimiento personal", "Naturaleza", "Geografía", "Folclore", "Responsabilidad"],
+        extract: '"El mundo es grande y hermoso, y vale la pena explorarlo." (Capítulo 24)',
       },
     },
   },
@@ -448,6 +472,7 @@ const countries: Country[] = [
           "Una historia de amor y oscuridad es una obra autobiográfica que narra la infancia y juventud de Amos Oz en el Jerusalén de los años 40 y 50, durante los primeros años del Estado de Israel. La obra combina memoria personal con historia colectiva, explorando la compleja relación entre el individuo y la nación en formación. Oz retrata con sensibilidad y honestidad la figura de su madre, Fania, una mujer culta y melancólica que se suicidó cuando él tenía 12 años, y la de su padre, un erudito que trabajaba como bibliotecario. A través de episodios familiares y sociales, el autor examina temas como la inmigración, la identidad judía, el sionismo, la pérdida de la inocencia y la construcción de una nueva sociedad. La prosa de Oz es lírica y reflexiva, combinando la intimidad de la memoria personal con la amplitud de la experiencia histórica. La obra es tanto un retrato de una familia como un fresco de una época crucial en la historia de Israel y del pueblo judío.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Memoria", "Identidad judía", "Sionismo", "Familia", "Historia de Israel"],
+        extract: '"El pasado no está muerto. Ni siquiera es pasado." (Capítulo 1)',
       },
     },
   },
@@ -474,6 +499,8 @@ const countries: Country[] = [
           "El Diario de Ana Frank es uno de los testimonios más conmovedores y universales sobre el Holocausto y la experiencia humana durante la Segunda Guerra Mundial. Escrito por una adolescente judía mientras se escondía con su familia en Ámsterdam durante la ocupación nazi, el diario abarca desde junio de 1942 hasta agosto de 1944. Ana Frank documenta no solo los horrores de la guerra y la persecución, sino también las experiencias típicas de la adolescencia: sus sueños, miedos, conflictos familiares, despertar sexual y reflexiones sobre la naturaleza humana. A través de sus cartas dirigidas a 'Kitty', Ana muestra una madurez extraordinaria y una capacidad notable para mantener la esperanza y la fe en la humanidad a pesar de las circunstancias terribles. El diario se ha convertido en un símbolo universal de la resistencia del espíritu humano frente a la opresión y ha educado a millones de personas sobre los horrores del Holocausto. La voz de Ana, interrumpida trágicamente cuando fue deportada a Bergen-Belsen donde murió, sigue resonando como un llamado a la tolerancia y los derechos humanos.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Holocausto", "Adolescencia", "Esperanza", "Derechos humanos", "Resistencia"],
+        extract:
+          '"Veo el mundo transformándose lentamente en un desierto, oigo el trueno que se acerca cada vez más y que nos destruirá también a nosotros, siento el sufrimiento de millones y, sin embargo, cuando miro al cielo, pienso que todo cambiará para bien, que esta crueldad también cesará, que la paz y la tranquilidad volverán a reinar en el cielo." (15 de julio de 1944)',
       },
     },
   },
@@ -500,6 +527,8 @@ const countries: Country[] = [
           "La vegetariana es una novela perturbadora y poética que explora la opresión femenina en la sociedad patriarcal coreana a través de la historia de Yeong-hye, una mujer que decide dejar de comer carne. Esta decisión aparentemente simple desencadena una serie de eventos violentos que revelan la brutalidad subyacente en las relaciones familiares y sociales. La novela está dividida en tres partes, cada una narrada desde una perspectiva diferente: el esposo abusivo, el cuñado obsesionado y la hermana. Han Kang utiliza un estilo onírico y simbólico para explorar temas como la autonomía corporal, la violencia doméstica, la enfermedad mental y la resistencia femenina. La transformación de Yeong-hye de mujer sumisa a ser que rechaza las normas sociales es tanto liberadora como trágica. La obra, que le valió a Han Kang el Premio Man Booker Internacional, es una crítica feroz del machismo y una meditación sobre los límites entre la cordura y la locura, la civilización y la naturaleza.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Opresión femenina", "Patriarcado", "Autonomía corporal", "Violencia doméstica", "Resistencia"],
+        extract:
+          '"Soñaba con árboles. Árboles que se extendían desde su cuerpo, brotando de sus manos y pies." (Parte 1)',
       },
     },
   },
@@ -526,6 +555,7 @@ const countries: Country[] = [
           "Mi nombre es Rojo es una novela compleja ambientada en el Estambul del siglo XVI que combina misterio, historia del arte y reflexión filosófica. La historia gira en torno al asesinato de un miniaturista que trabajaba en un libro secreto encargado por el sultán, un proyecto que mezcla el arte islámico tradicional con técnicas occidentales. Pamuk utiliza múltiples narradores, incluyendo personajes humanos, colores, objetos e incluso la muerte misma, para explorar el choque entre Oriente y Occidente, tradición y modernidad, arte religioso y secular. La novela examina cómo el arte refleja y moldea la identidad cultural, y cómo los cambios artísticos pueden amenazar las estructuras sociales establecidas. A través de la investigación del crimen, Pamuk presenta un retrato vívido del Imperio Otomano en un momento de transición, explorando temas como la fe, el amor, la creatividad y el poder. La obra es tanto una novela policíaca como una meditación profunda sobre la naturaleza del arte y la cultura.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Arte islámico", "Oriente vs Occidente", "Tradición", "Imperio Otomano", "Identidad cultural"],
+        extract: '"Soy un muerto. He estado muerto durante mucho tiempo." (Capítulo 1)',
       },
     },
   },
@@ -552,6 +582,7 @@ const countries: Country[] = [
           "El Alquimista es una fábula moderna sobre la búsqueda de los sueños y el descubrimiento del propósito de vida. La historia sigue a Santiago, un joven pastor andaluz que emprende un viaje desde España hasta las pirámides de Egipto en busca de un tesoro, guiado por sueños recurrentes. Durante su travesía, Santiago encuentra diversos personajes que le enseñan lecciones sobre la vida, el amor y la realización personal: un rey misterioso, un comerciante de cristales, un alquimista y Fátima, una mujer del desierto de quien se enamora. Coelho utiliza elementos del sufismo, la alquimia y la filosofía universal para crear una narrativa que trasciende las barreras culturales y religiosas. La novela explora conceptos como la 'Leyenda Personal' (el propósito único de cada individuo), las señales del universo, y la idea de que el verdadero tesoro se encuentra en el viaje mismo, no en el destino. Con un estilo simple pero profundo, la obra se ha convertido en un fenómeno mundial, traducida a más de 80 idiomas y vendiendo millones de copias.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Búsqueda personal", "Destino", "Sueños", "Espiritualidad", "Autoconocimiento"],
+        extract: '"Cuando quieres algo, todo el Universo conspira para que realices tu deseo." (Prólogo)',
       },
     },
   },
@@ -578,6 +609,7 @@ const countries: Country[] = [
           "Las Analectas son una colección de dichos, conversaciones y reflexiones de Confucio compiladas por sus discípulos después de su muerte. Esta obra fundamental del pensamiento chino presenta las enseñanzas del maestro sobre ética, moral, política y educación que han influenciado la cultura china durante más de dos milenios. Confucio enfatiza conceptos como el 'ren' (benevolencia o humanidad), el 'li' (ritual o propiedad), la importancia de la educación, el respeto filial y la armonía social. Las Analectas no presentan un sistema filosófico sistemático, sino que ofrecen sabiduría práctica para la vida cotidiana y el gobierno justo. Confucio creía que la sociedad podía perfeccionarse a través de la educación moral y el ejemplo de líderes virtuosos. Sus enseñanzas sobre la importancia del aprendizaje continuo, el respeto por los mayores, la moderación y la búsqueda de la armonía han moldeado no solo la cultura china, sino también las de Corea, Japón y Vietnam. La obra sigue siendo relevante hoy en día como guía para la conducta ética y el liderazgo responsable.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Ética", "Educación", "Armonía social", "Virtud", "Sabiduría práctica"],
+        extract: '"Aprender sin reflexionar es malgastar la energía." (Libro II, 15)',
       },
     },
   },
@@ -604,6 +636,7 @@ const countries: Country[] = [
           "La Apología de Sócrates, escrita por Platón, es el relato del juicio y defensa de Sócrates ante los tribunales atenienses, donde fue acusado de corromper a la juventud y no creer en los dioses de la ciudad. En este diálogo, Sócrates presenta su filosofía de vida y su método de búsqueda de la verdad a través del cuestionamiento constante. La obra es fundamental para entender el pensamiento socrático y marca el nacimiento de la filosofía occidental como disciplina rigurosa. Sócrates defiende su práctica de examinar las creencias de las personas, demostrando que muchas veces lo que consideramos conocimiento es en realidad ignorancia. Su famosa declaración 'solo sé que no sé nada' ilustra su humildad intelectual y su compromiso con la búsqueda continua de la verdad. La Apología también presenta la noble actitud de Sócrates ante la muerte, prefiriendo morir antes que renunciar a su misión filosófica. La obra establece principios fundamentales sobre la importancia del examen de la vida, la integridad moral y el valor de la búsqueda de la sabiduría por encima de los bienes materiales.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Búsqueda de la verdad", "Examen de la vida", "Integridad moral", "Sabiduría", "Filosofía"],
+        extract: '"Una vida sin examen no merece ser vivida." (38a)',
       },
     },
   },
@@ -630,6 +663,8 @@ const countries: Country[] = [
           "El cuervo es el poema más famoso de Edgar Allan Poe y una obra maestra de la literatura gótica americana. El poema narra la visita nocturna de un cuervo parlante a un hombre que lamenta la pérdida de su amada Lenore. A través de dieciocho estrofas de métrica compleja, Poe crea una atmósfera de creciente desesperación y locura. El cuervo, que solo puede pronunciar la palabra 'Nevermore' (Nunca más), se convierte en un símbolo de la permanencia de la pérdida y la imposibilidad del olvido. Poe utiliza técnicas poéticas sofisticadas como la aliteración, la asonancia y el ritmo hipnótico para crear un efecto musical que intensifica el horror psicológico. El poema explora temas universales como el duelo, la memoria, la soledad y la confrontación con la mortalidad. La estructura del poema, con su estribillo repetitivo y su progresión hacia la desesperación total, ejemplifica la teoría poética de Poe sobre el 'efecto único' que debe producir toda obra literaria. El cuervo se ha convertido en un símbolo icónico de la literatura americana y ha influenciado a generaciones de escritores.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Duelo", "Pérdida", "Locura", "Muerte", "Horror psicológico"],
+        extract:
+          "\"Una vez, en una lúgubre medianoche, mientras meditaba, débil y cansado, sobre muchos un volumen curioso y olvidado de saber olvidado, mientras asentía, casi dormitando, de repente se produjo un golpe, como si alguien suavemente golpeara, golpeara a la puerta de mi cámara. 'Es algún visitante', murmuré, 'que golpea a la puerta de mi cámara; esto es todo, y nada más'.\" (Estrofa 1)",
       },
     },
   },
@@ -656,6 +691,8 @@ const countries: Country[] = [
           "El cuento de la criada es una novela distópica que presenta la República de Gilead, un estado teocrático totalitario que ha reemplazado a Estados Unidos en un futuro cercano. En esta sociedad, la fertilidad femenina ha disminuido drásticamente debido a la contaminación y las enfermedades, convirtiendo a las mujeres fértiles en un recurso valioso y controlado. La protagonista, Offred, es una 'criada' asignada a un comandante para procrear en su nombre. Atwood construye un mundo donde las mujeres han perdido todos sus derechos y son clasificadas según su función reproductiva. La novela es narrada desde la perspectiva de Offred, quien recuerda su vida anterior mientras navega por las restricciones y peligros de Gilead. A través de esta narrativa, Atwood explora temas como el control reproductivo, la opresión religiosa, la resistencia femenina y los peligros del fundamentalismo. La obra funciona como una advertencia sobre cómo los derechos pueden erosionarse gradualmente y cómo las crisis pueden ser utilizadas para justificar la opresión. La novela ha ganado nueva relevancia en debates contemporáneos sobre derechos reproductivos y autonomía femenina.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Distopía", "Derechos reproductivos", "Totalitarismo", "Resistencia femenina", "Fundamentalismo"],
+        extract:
+          '"Ahora estoy despierta a la hora de acostarme. Debo estar despierta. Debo recordar, aunque recuerde mal." (Capítulo 1)',
       },
     },
   },
@@ -682,6 +719,7 @@ const countries: Country[] = [
           "Pedro Páramo es una obra revolucionaria que transformó la narrativa latinoamericana y anticipó muchas técnicas del realismo mágico. La novela narra la historia de Juan Preciado, quien viaja al pueblo fantasma de Comala en busca de su padre, Pedro Páramo, cumpliendo una promesa hecha a su madre moribunda. Al llegar, descubre que el pueblo está habitado por muertos que le cuentan la historia de Pedro Páramo, un cacique despótico que dominó la región. Rulfo utiliza una estructura fragmentaria y voces múltiples para crear una narrativa donde los límites entre vida y muerte, pasado y presente, se difuminan. La novela presenta un México rural devastado por la violencia, el caciquismo y la Revolución, pero lo hace a través de una prosa poética que eleva la tragedia a dimensiones míticas. Los personajes están atrapados en un purgatorio eterno, condenados a repetir sus historias de amor, venganza y muerte. La obra influyó profundamente en escritores como García Márquez y estableció nuevos paradigmas para la narrativa hispanoamericana, demostrando que la literatura regional podía alcanzar universalidad a través de la innovación formal y la profundidad poética.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Muerte", "Caciquismo", "México rural", "Realismo mágico", "Violencia"],
+        extract: '"Vine a Comala porque me dijeron que acá vivía mi padre, un tal Pedro Páramo." (Inicio)',
       },
     },
   },
@@ -708,6 +746,7 @@ const countries: Country[] = [
           "Doña Bárbara es la novela más importante de la literatura venezolana y una obra fundamental del regionalismo latinoamericano. La historia enfrenta a Santos Luzardo, un abogado educado en Caracas que regresa a los llanos para reclamar sus tierras, con Doña Bárbara, una mujer poderosa y despiadada que domina la región a través de la violencia y la superstición. Gallegos utiliza este conflicto personal para representar la lucha entre civilización y barbarie, educación e ignorancia, ley y fuerza bruta que caracterizaba a la Venezuela de principios del siglo XX. La novela presenta un retrato épico de los llanos venezolanos, con sus tradiciones, su naturaleza salvaje y sus habitantes. Doña Bárbara es un personaje complejo que encarna tanto la fuerza destructiva como la vitalidad de la tierra americana. A través de la transformación gradual de ambos protagonistas, Gallegos explora temas como la redención, el poder del amor y la educación como fuerzas civilizadoras. La obra combina realismo social con elementos míticos y folclóricos, creando una síntesis entre lo particular venezolano y lo universal humano. La novela influyó en toda una generación de escritores latinoamericanos y estableció el modelo de la novela de la tierra.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Civilización vs barbarie", "Llanos venezolanos", "Poder", "Redención", "Identidad nacional"],
+        extract: '"La sabana es ancha y ajena." (Capítulo 1)',
       },
     },
   },
@@ -734,6 +773,8 @@ const countries: Country[] = [
           "Versos Sencillos es la obra poética más conocida de José Martí y una de las cumbres de la poesía hispanoamericana del siglo XIX. Compuesta durante su exilio en Nueva York, la colección refleja la nostalgia del poeta por su patria, sus reflexiones sobre la libertad, la justicia y la condición humana. Los poemas, escritos en cuartetas octosílabas de rima asonante, combinan la sencillez formal con una profundidad emocional y filosófica extraordinaria. Martí utiliza imágenes de la naturaleza americana, especialmente de Cuba, para expresar sus sentimientos patrióticos y su visión de una América Latina unida y libre. Los versos abordan temas como el amor a la patria, la solidaridad con los oprimidos, la belleza de la naturaleza y la búsqueda de la autenticidad. El poema más famoso, 'Yo soy un hombre sincero', se convirtió en la letra de la canción 'Guantanamera', difundiendo la poesía de Martí por todo el mundo. La obra refleja la síntesis martiana entre pensamiento y sentimiento, entre compromiso político y expresión artística, estableciendo un modelo para la literatura comprometida en América Latina.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Patriotismo", "Libertad", "Naturaleza americana", "Exilio", "Compromiso social"],
+        extract:
+          '"Yo soy un hombre sincero / De donde crece la palma, / Y antes de morirme quiero / Echar mis versos del alma." (I)',
       },
     },
   },
@@ -760,6 +801,8 @@ const countries: Country[] = [
           "El Señor de los Anillos es una obra épica de fantasía que narra la lucha entre el bien y el mal en la Tierra Media, un mundo secundario creado por Tolkien con extraordinario detalle. La historia sigue a Frodo Bolsón, un hobbit que debe destruir el Anillo Único para derrotar al Señor Oscuro Sauron. Acompañado por la Comunidad del Anillo, Frodo emprende un viaje peligroso que lo llevará a través de paisajes diversos y enfrentamientos épicos. Tolkien, profesor de filología en Oxford, creó no solo una narrativa compleja sino también idiomas completos, genealogías, mapas y una historia milenaria para su mundo ficticio. La obra explora temas universales como la amistad, el sacrificio, la corrupción del poder, la pérdida de la inocencia y la lucha entre la esperanza y la desesperación. Los personajes, desde el sabio Gandalf hasta el atormentado Gollum, representan diferentes aspectos de la naturaleza humana. La trilogía estableció las bases de la fantasía moderna como género literario y ha influenciado a generaciones de escritores. La obra combina elementos de la mitología nórdica, celta y germánica con temas cristianos, creando una mitología moderna que resuena con lectores de todas las culturas.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Bien vs mal", "Amistad", "Sacrificio", "Poder", "Mitología moderna"],
+        extract:
+          '"Un Anillo para gobernarlos a todos. Un Anillo para encontrarlos, Un Anillo para atraerlos a todos y atarlos en las tinieblas." (La inscripción del Anillo)',
       },
     },
   },
@@ -786,6 +829,8 @@ const countries: Country[] = [
           "Siddhartha es una novela que narra el viaje espiritual de un joven brahmán en la India antigua en busca de la iluminación. Inspirado en la vida de Buda pero no siendo una biografía, Hesse crea una parábola universal sobre la búsqueda del sentido de la vida y la sabiduría. Siddhartha abandona su vida privilegiada para convertirse en asceta, luego en comerciante y amante, y finalmente en barquero, aprendiendo que la sabiduría no puede ser enseñada sino que debe ser experimentada personalmente. La novela refleja el interés de Hesse por la filosofía oriental, particularmente el budismo y el hinduismo, pero también incorpora elementos del pensamiento occidental. A través del personaje de Siddhartha, Hesse explora temas como la dualidad entre espíritu y materia, la naturaleza cíclica del tiempo, la importancia de la experiencia directa sobre el conocimiento libresco, y la unidad fundamental de toda existencia. La prosa de Hesse es lírica y contemplativa, creando una atmósfera de serenidad y profundidad espiritual. La obra se convirtió en un texto fundamental para la contracultura de los años 60 y sigue siendo relevante para quienes buscan significado espiritual en un mundo materialista.",
         image: "/placeholder.svg?height=400&width=600",
         themes: ["Búsqueda espiritual", "Iluminación", "Sabiduría", "Filosofía oriental", "Autoconocimiento"],
+        extract:
+          '"La sabiduría no es comunicable. La sabiduría que un sabio intenta comunicar siempre suena a locura." (Capítulo 4)',
       },
     },
   },
@@ -812,32 +857,35 @@ const countries: Country[] = [
           "Cómo ser mujer es un ensayo autobiográfico que combina humor, honestidad brutal y análisis social para explorar la experiencia femenina en el siglo XXI. Moran utiliza episodios de su propia vida para examinar temas como la pubertad, la sexualidad, el trabajo, la maternidad y el feminismo con un estilo irreverente y accesible. La obra desmitifica muchos aspectos de la experiencia femenina, desde los primeros sujetadores hasta las presiones sociales sobre el cuerpo y la carrera profesional. Moran argumenta que el feminismo no es una ideología compleja sino simplemente la creencia de que las mujeres son seres humanos completos que merecen igualdad de oportunidades. A través de anécdotas divertidas y observaciones perspicaces, la autora aborda la hipocresía de la sociedad respecto a las mujeres y propone una visión más auténtica y liberadora de la feminidad. El libro se convirtió en un fenómeno editorial y ayudó a revitalizar el discurso feminista para una nueva generación, demostrando que el feminismo puede ser divertido, inclusivo y profundamente personal.",
         image: "/caitlin-moran-quote.png",
         themes: ["Feminismo", "Experiencia femenina", "Humor", "Autobiografía", "Crítica social"],
+        extract: '"El feminismo es simplemente esto: una persona cree que las mujeres son personas." (Capítulo 1)',
       },
     },
   },
   {
-    id: "argentina_cortazar",
-    name: "Argentina",
-    flag: "🇦🇷",
-    capital: "Buenos Aires",
-    population: "45.8 millones",
-    language: "Español",
-    currency: "Peso argentino ($)",
-    founded: "1816",
+    id: "belgium",
+    name: "Bélgica",
+    flag: "🇧🇪",
+    capital: "Bruselas",
+    population: "11.5 millones",
+    language: "Neerlandés",
+    currency: "Euro (€)",
+    founded: "1830",
     writer: {
-      name: "Julio Cortázar",
-      profession: "Novelista y cuentista",
-      quote: "Nada está perdido si se tiene el valor de proclamar que todo está perdido y hay que empezar de nuevo.",
-      period: "1914-1984",
+      name: "Georges Simenon",
+      profession: "Novelista",
+      quote: "La escritura es una profesión peligrosa: uno se expone completamente.",
+      period: "1903-1989",
       photo: "/cortazar-sketch.png",
       masterwork: {
-        title: "Rayuela",
-        year: "1963",
-        genre: "Novela experimental",
+        title: "El perro amarillo",
+        year: "1931",
+        genre: "Novela policíaca",
         summary:
-          "Rayuela es una novela revolucionaria que desafía las convenciones narrativas tradicionales y propone una nueva forma de leer y entender la literatura. La obra puede leerse de manera lineal o siguiendo un orden alternativo propuesto por el autor, creando múltiples experiencias de lectura. La historia sigue a Horacio Oliveira, un intelectual argentino en París que busca desesperadamente un sentido absoluto a la existencia, y luego su regreso a Buenos Aires. Cortázar utiliza técnicas experimentales como capítulos prescindibles, juegos tipográficos y referencias intertextuales para crear una obra que es tanto novela como reflexión sobre el acto de escribir y leer. La obra explora temas existenciales como la búsqueda de autenticidad, la incomunicación humana, el amor, la muerte y la creación artística. Los personajes del Club de la Serpiente en París y las aventuras de Oliveira en Buenos Aires representan diferentes aproximaciones a la realidad y al conocimiento. Rayuela influyó profundamente en la narrativa latinoamericana posterior y estableció nuevos paradigmas para la novela experimental, demostrando que la forma puede ser tan importante como el contenido en la literatura.",
+          "El perro amarillo es una de las primeras novelas del inspector Maigret y una obra maestra de la novela policíaca europea. La historia transcurre en Concarneau, un pequeño puerto bretón, donde una serie de crímenes aparentemente inconexos perturban la tranquilidad del pueblo. Maigret debe desentrañar una compleja red de secretos, venganzas y pasiones ocultas que involucran a los habitantes locales. Simenon utiliza la atmósfera brumosa y melancólica de la costa bretona para crear un ambiente de tensión psicológica que caracteriza toda la serie. El inspector Maigret no es un detective brillante al estilo de Sherlock Holmes, sino un hombre común que comprende la naturaleza humana y utiliza la paciencia y la observación para resolver los casos. La novela explora temas como la culpa, los secretos familiares, la venganza y la justicia, mientras presenta un retrato realista de la Francia provincial. Simenon logra crear una narrativa donde el misterio surge naturalmente de las complejidades de las relaciones humanas.",
         image: "/placeholder.svg?height=400&width=600",
-        themes: ["Experimentación narrativa", "Existencialismo", "Búsqueda de sentido", "Amor", "Arte"],
+        themes: ["Misterio", "Psicología humana", "Francia provincial", "Justicia", "Secretos familiares"],
+        extract:
+          "\"Maigret se quedó inmóvil durante un buen rato, con las manos en los bolsillos, observando el puerto donde las luces comenzaban a encenderse una a una. El perro amarillo había desaparecido, pero su presencia parecía flotar aún en el aire húmedo de la tarde. 'Hay algo que no encaja', murmuró para sí mismo, mientras el viento del mar le traía el olor a algas y a pescado. Los habitantes de Concarneau caminaban presurosos, evitando su mirada, como si todos tuvieran algo que ocultar. En casos como este, Maigret sabía que la verdad no se encontraba en las pistas evidentes, sino en los silencios, en las miradas esquivas, en las palabras no pronunciadas. El crimen, pensaba, era solo la superficie de algo mucho más profundo y turbio que se agitaba en las profundidades del alma humana.\" (Capítulo 3, página 47)",
       },
     },
   },
@@ -1375,6 +1423,18 @@ backdrop-filter: blur(10px);
                       <div className="space-y-6 flex flex-col justify-center">
                         <div className="literary-body text-gray-700 leading-relaxed text-justify">
                           <p>{country.writer.masterwork.summary}</p>
+                        </div>
+
+                        <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-6 rounded-lg border-l-4 border-amber-500 shadow-sm mt-6">
+                          <h4 className="literary-title font-semibold text-lg text-amber-800 mb-3 flex items-center gap-2">
+                            <Quote className="h-5 w-5" />
+                            Extracto de la Obra
+                          </h4>
+                          <div className="text-amber-700">
+                            <blockquote className="literary-quote italic leading-relaxed">
+                              {country.writer.masterwork.extract}
+                            </blockquote>
+                          </div>
                         </div>
 
                         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border-l-4 border-blue-500 shadow-sm">
